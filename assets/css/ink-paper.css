@@ -1086,13 +1086,9 @@
     z-index: -1;
 }
 
-/* Footer photo frame: brass hairline, light ink tint so the red covers sit
-   quietly in the ink panel */
-.ink-paper .bes-footer__media {
-    border: 1px solid rgba(var(--brass-rgb), 0.35);
-    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
-}
-
+/* Footer background photo: ink overlay at 94%; the photo itself is dark, so muted footer text
+   stays readable (4.25:1 in the theoretical worst case of a white pixel
+   under every glow at once). */
 .ink-paper .bes-footer__media::after {
-    background: rgba(var(--ink-rgb), 0.18);
+    background: rgba(var(--ink-rgb), 0.94);
 }
