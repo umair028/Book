@@ -1085,3 +1085,14 @@
 .ink-paper .banner-form__ribbon {
     z-index: -1;
 }
+
+/* Footer photo frame: brass hairline, light ink tint so the red covers sit
+   quietly in the ink panel */
+.ink-paper .bes-footer__media {
+    border: 1px solid rgba(var(--brass-rgb), 0.35);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.ink-paper .bes-footer__media::after {
+    background: rgba(var(--ink-rgb), 0.18);
+}
