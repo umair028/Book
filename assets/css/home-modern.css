@@ -488,3 +488,23 @@
         background: radial-gradient(circle 80px at 0 0, transparent 79.5px, var(--hm-panel-edge, #2a6ef2) 80px);
     }
 }
+
+/* ---------- Footer: same width as the contact section above it ---------- */
+@media (min-width: 992px) {
+    .home-modern .bes-footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-modern .bes-footer > .container {
+        width: 100%;
+        max-width: none !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-modern .bes-footer__panel {
+        padding-left: max(48px, 6%);
+        padding-right: max(48px, 6%);
+    }
+}
