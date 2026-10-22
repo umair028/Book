@@ -1,0 +1,11 @@
+These page folders were taken off the site on 2026-10-23 so only the home
+page remains. Nothing was deleted.
+
+To bring a page back, move its folder from here back to the site root
+(next to index.html), then re-add its link in index.html's header menu
+or footer Quick Links.
+
+cdn-cgi/ is an old Cloudflare email-protection page from the original
+website copy; nothing uses it any more.
+
+Do not upload this "backups" folder to the live website.

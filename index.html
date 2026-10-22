@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Publisher: Full-Service Book Publishing Company</title>
+        <meta name="description" content="Work with a best book publishing company that handles editing, ghostwriting, formatting, and cover design, while you keep full ownership and royalties.">
+        <link rel="icon" type="image/png" href="assets/images/favicon-ink.png">
+    <meta property="og:image" content="https://www.bes-publishers.com/assets/images/home-banner.webp" />
+    <!-- Preconnect to CDNs -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Home page only: modern touch-up (remove this line to undo) -->
+    <link rel="stylesheet" href="assets/css/home-modern.css">
+    <!-- "Ink and Paper" colour scheme (remove this line to undo) -->
+    <link rel="stylesheet" href="assets/css/ink-paper.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18224305351"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18224305351');
+    </script></head>
+<body class="home-modern ink-paper">
+
+    <section class="home-banner home-banner--video">
+        <div class="home-banner__media" aria-hidden="true">
+            <!-- Stock footage: "Cozy Library Aisle with Bookshelves" by Sai zainalin ZN, Pexels (free license) -->
+            <video class="home-banner__video" id="heroVideo" muted loop playsinline preload="none" data-src="assets/videos/2.mp4"></video>
+        </div>
+        <script>
+        // Start the hero video while the page is still loading (desktop only).
+        (function () {
+            var v = document.getElementById('heroVideo');
+            if (!window.matchMedia('(min-width: 992px)').matches) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            if (navigator.connection && navigator.connection.saveData) return;
+            v.addEventListener('playing', function () { v.parentNode.classList.add('is-playing'); }, { once: true });
+            v.src = v.getAttribute('data-src');
+            v.autoplay = true;
+        })();
+        </script>
+        <header class="site-header" id="siteHeader">
+    <div class="container">
+        <div class="header-topbar">
+            <a href="mailto:info@example.com" class="header-topbar__item">
+                <i class="fa-solid fa-envelope header-topbar__icon" aria-hidden="true"></i>
+                <span>Email: info@example.com</span>
+            </a>
+            <a href="tel:+12025550199" class="header-topbar__item">
+                <i class="fa-solid fa-phone header-topbar__icon" aria-hidden="true"></i>
+                <span>Phone: +1 202 555 0199</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container header-main__inner">
+            <button type="button" class="header-toggle" id="headerToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="header-nav" id="primaryNav" aria-label="Primary">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+
+            <a href="index.html" class="header-logo" aria-label="Home">
+                <span class="logo-text">LOGO</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="tel:+12025550199" class="header-call">Make a Call</a>
+                <a href="#" class="header-cta" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">
+                    <span class="header-cta__text">Get Started</span>
+                    <span class="header-cta__arrow" aria-hidden="true">
+                        <img src="assets/images/get-start-icon-accent.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+        <div class="container home-banner__inner">
+            <div class="home-banner__content">
+                <p class="home-banner__eyebrow">Best Book Publishing Company in USA</p>
+                <h1 class="home-banner__title">Turn Your Publishing Dream into <span class="hm-accent">Reality</span> with Book Publisher</h1>
+                <p class="home-banner__text">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod. Tempor incididunt ut labore et dolore magna aliqua ut enim ad. Minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <div class="home-banner__actions">
+                    <a href="javascript:;" class="banner-chat-btn" onclick="setButtonURL();" role="button">
+                        <span class="banner-chat-btn__text">Live Chat</span>
+                        <span class="banner-chat-btn__icon" aria-hidden="true">
+                            <img src="assets/images/live-chat-icon-accent.png" alt="">
+                        </span>
+                    </a>
+                    <a href="tel:+12025550199" class="banner-call-link">Make a Call</a>
+                </div>
+                <ul class="hm-trust" aria-label="What you keep">
+                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Enim ad</li>
+                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Aute irure</li>
+                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Occaecat cupidatat non</li>
+                </ul>
+            </div>
+
+            <div class="home-banner__form-wrap">
+                <div class="banner-form">
+                    <span class="banner-form__glass" aria-hidden="true"></span>
+                    <img src="assets/images/form-bg-book-ink.webp" alt="" class="banner-form__bg" aria-hidden="true">
+                    <span class="banner-form__ribbon" aria-hidden="true"></span>
+                    <form class="banner-form__body" action="https://www.bes-publishers.com/leads/" method="POST">
+
+                        <h2 class="banner-form__title">Claim Your <span>50% Discount</span></h2>
+                        <p class="banner-form__subtitle">Turpis et commodo pharetra est eros bibendum elit.</p>
+
+                        <label class="banner-form__field">
+                            <i class="fa-regular fa-user" aria-hidden="true"></i>
+                            <input type="text" name="name" placeholder="Your Name*" required>
+                        </label>
+                        <label class="banner-form__field">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <input type="email" name="email" placeholder="Email*" required>
+                        </label>
+                        <label class="banner-form__field">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <input type="tel" name="phone" placeholder="Phone*" required>
+                        </label>
+                        <label class="banner-form__field banner-form__field--message">
+                            <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                            <textarea name="brief" placeholder="Message*" rows="3" required></textarea>
+                        </label>
+
+                        <button type="submit" class="banner-form__submit">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-index2">
+        <div class="container">
+            <div class="home-index2__panel">
+                <div class="home-index2__media">
+                    <img src="assets/images/index-sec-img2.webp" loading="lazy" decoding="async" alt="Books across print, tablet, phone, and e-reader">
+                </div>
+                <div class="home-index2__content">
+                    <h2 class="home-index2__title">Professional Book Publishing for Every Genre and Every Author</h2>
+                    <p class="home-index2__text">Magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco. Laboris nisi ut aliquip ex ea commodo consequat duis aute irure. Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
+                    <div class="home-index2__actions">
+                        <a href="tel:+12025550199" class="home-index2__call">Make a Call</a>
+                        <a href="javascript:;" class="home-index2__chat" onclick="setButtonURL();" role="button">
+                            <span>Live Chat</span>
+                            <span class="home-index2__chat-icon" aria-hidden="true">
+                                <img src="assets/images/live-chat-icon-accent.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-index3" id="services">
+        <div class="container">
+            <div class="home-index3__head">
+                <p class="home-index3__eyebrow">Our Services</p>
+                <h2 class="home-index3__title">Everything Your Manuscript Needs to <span class="hm-accent">Become a Book</span></h2>
+                <p class="home-index3__desc">Commodo consequat duis aute irure dolor in reprehenderit in voluptate velit. Esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat. Non proident sunt in culpa qui officia deserunt mollit anim id. Est laborum curabitur pretium tincidunt lacus nulla gravida orci a odio. Nullam varius turpis.</p>
+            </div>
+
+            <div class="home-index3__list">
+                <article class="service-card service-card--blue">
+                    <div class="service-card__icon">
+                        <img src="assets/images/service-icon1.png" loading="lazy" decoding="async" alt="">
+                    </div>
+                    <span class="service-card__divider" aria-hidden="true"></span>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Book Editing &amp; Proofreading</h3>
+                        <p class="service-card__text">Pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui. Officia deserunt mollit anim id est laborum curabitur pretium tincidunt lacus. Nulla gravida orci a odio nullam varius turpis.</p>
+                    </div>
+                </article>
+
+                <article class="service-card service-card--dark service-card--right">
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Ghostwriting</h3>
+                        <p class="service-card__text">Laborum curabitur pretium tincidunt lacus nulla gravida orci a odio nullam. Varius turpis et commodo pharetra est eros bibendum elit nec luctus. Magna felis sollicitudin mauris integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate.</p>
+                    </div>
+                    <span class="service-card__divider" aria-hidden="true"></span>
+                    <div class="service-card__icon">
+                        <img src="assets/images/service-icon2-brass.png" loading="lazy" decoding="async" alt="">
+                    </div>
+                </article>
+
+                <article class="service-card service-card--blue">
+                    <div class="service-card__icon">
+                        <img src="assets/images/service-icon3.png" loading="lazy" decoding="async" alt="">
+                    </div>
+                    <span class="service-card__divider" aria-hidden="true"></span>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Book Formatting</h3>
+                        <p class="service-card__text">Eros bibendum elit nec luctus magna felis sollicitudin mauris integer in. Mauris eu nibh euismod gravida duis ac tellus et risus vulputate. Vehicula donec lobortis risus a elit.</p>
+                    </div>
+                </article>
+
+                <article class="service-card service-card--dark service-card--right">
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Book Cover Design</h3>
+                        <p class="service-card__text">Ac tellus et risus vulputate vehicula donec lobortis risus a elit. Etiam tempor lorem ipsum dolor sit amet consectetur adipiscing elit sed. Do eiusmod tempor incididunt ut labore et dolore magna aliqua ut. Enim ad minim veniam quis nostrud.</p>
+                    </div>
+                    <span class="service-card__divider" aria-hidden="true"></span>
+                    <div class="service-card__icon">
+                        <img src="assets/images/service-icon4-brass.png" loading="lazy" decoding="async" alt="">
+                    </div>
+                </article>
+            </div>
+
+            <div class="home-index3__actions">
+                <a href="javascript:;" class="home-index3__chat" onclick="setButtonURL();" role="button">
+                    <span>Live Chat</span>
+                    <span class="home-index3__chat-icon" aria-hidden="true">
+                        <img src="assets/images/live-chat-icon-accent.png" alt="">
+                    </span>
+                </a>
+                <a href="tel:+12025550199" class="home-index3__call">Make a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-index4" id="why-us">
+        <div class="container">
+            <div class="home-index4__panel">
+                <div class="home-index4__head">
+                    <p class="home-index4__eyebrow">Why Choose Us</p>
+                    <h2 class="home-index4__title">Why Book Publisher Is a Complete <span class="hm-accent">Self-Publishing Company</span></h2>
+                    <p class="home-index4__desc">Amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua ut enim ad minim veniam quis nostrud. Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
+                </div>
+
+                <div class="home-index4__body">
+                    <div class="home-index4__col home-index4__col--left">
+                        <article class="why-item why-item--left">
+                            <div class="why-item__content">
+                                <h3 class="why-item__title">01. Book Writing</h3>
+                                <p class="why-item__text">Ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat duis aute irure dolor in reprehenderit in. Voluptate velit esse cillum dolore eu.</p>
+                                <a href="#" class="why-item__link" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="why-item__icon">
+                                <img src="assets/images/index4-icon1-ink.png" loading="lazy" decoding="async" alt="">
+                            </div>
+                        </article>
+
+                        <article class="why-item why-item--left">
+                            <div class="why-item__content">
+                                <h3 class="why-item__title">02. Cover Design</h3>
+                                <p class="why-item__text">Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu. Fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
+                                <a href="#" class="why-item__link" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                            <div class="why-item__icon">
+                                <img src="assets/images/index4-icon2-ink.png" loading="lazy" decoding="async" alt="">
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="home-index4__center">
+                        <img src="assets/images/index-center-img4-book.png" loading="lazy" decoding="async" alt="Book Publisher logo">
+                    </div>
+
+                    <div class="home-index4__col home-index4__col--right">
+                        <article class="why-item why-item--right">
+                            <div class="why-item__icon">
+                                <img src="assets/images/index4-icon3-ink.png" loading="lazy" decoding="async" alt="">
+                            </div>
+                            <div class="why-item__content">
+                                <h3 class="why-item__title">03. Distribution</h3>
+                                <p class="why-item__text">Cupidatat non proident sunt in culpa qui officia deserunt mollit anim. Id est laborum curabitur pretium tincidunt lacus nulla gravida orci a. Odio nullam varius turpis et commodo pharetra est eros bibendum elit nec luctus.</p>
+                                <a href="#" class="why-item__link" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </article>
+
+                        <article class="why-item why-item--right">
+                            <div class="why-item__icon">
+                                <img src="assets/images/index4-icon4-ink.png" loading="lazy" decoding="async" alt="">
+                            </div>
+                            <div class="why-item__content">
+                                <h3 class="why-item__title">04. Audiobook</h3>
+                                <p class="why-item__text">Lacus nulla gravida orci a odio nullam varius turpis et commodo. Pharetra est eros bibendum elit nec luctus magna felis sollicitudin mauris. Integer in mauris.</p>
+                                <a href="#" class="why-item__link" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="home-index4__actions">
+                    <a href="javascript:;" class="home-index4__chat" onclick="setButtonURL();" role="button">
+                        <span>Live Chat</span>
+                        <span class="home-index4__chat-icon" aria-hidden="true">
+                            <img src="assets/images/live-chat-icon-accent.png" alt="">
+                        </span>
+                    </a>
+                    <a href="tel:+12025550199" class="home-index4__call">Make a Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section-5" id="how-we-work">
+        <div class="container">
+            <div class="index-sec5__content">
+                <div class="index-sec5__header text-center">
+                    <p class="index-sec5__eyebrow">How We Work</p>
+                    <h2 class="index-sec5__title" id="index-sec5-title">What Working With Us <span class="hm-accent">Actually Looks Like</span></h2>
+                    <p class="index-sec5__intro">Luctus magna felis sollicitudin mauris integer in mauris eu nibh euismod. Gravida duis ac tellus et risus vulputate vehicula donec lobortis risus. A elit etiam tempor lorem ipsum dolor sit amet consectetur adipiscing. Elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+
+                <div class="index-sec5__roadmap">
+                    <img src="assets/images/border-arrow1.webp" alt="" class="index-sec5__line index-sec5__line--12" width="476" height="111" aria-hidden="true">
+                    <img src="assets/images/border-arrow2.webp" alt="" class="index-sec5__line index-sec5__line--23" width="496" height="111" aria-hidden="true">
+                    <img src="assets/images/border-arrow1.webp" alt="" class="index-sec5__line index-sec5__line--34" width="476" height="111" aria-hidden="true">
+
+                    <div class="index-sec5__grid">
+                        <article class="index-sec5__card">
+                            <div class="index-sec5__badge">
+                                <span class="index-sec5__badge-step">STEP 01</span>
+                            </div>
+                            <div class="index-sec5__card-body">
+                                <h3 class="index-sec5__card-title">INITIAL CONSULTATION</h3>
+                                <p class="index-sec5__card-text">Vulputate vehicula donec lobortis risus a elit etiam tempor lorem ipsum. Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt. Ut labore et dolore magna aliqua ut enim ad minim veniam quis.</p>
+                            </div>
+                        </article>
+
+                        <article class="index-sec5__card">
+                            <div class="index-sec5__badge">
+                                <span class="index-sec5__badge-step">STEP 02</span>
+                            </div>
+                            <div class="index-sec5__card-body">
+                                <h3 class="index-sec5__card-title">AGREEMENT AND CONFIRMATION</h3>
+                                <p class="index-sec5__card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex.</p>
+                            </div>
+                        </article>
+
+                        <article class="index-sec5__card">
+                            <div class="index-sec5__badge">
+                                <span class="index-sec5__badge-step">STEP 03</span>
+                            </div>
+                            <div class="index-sec5__card-body">
+                                <h3 class="index-sec5__card-title">ONBOARDING &amp; TEAM INTRODUCTION</h3>
+                                <p class="index-sec5__card-text">Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Dolore eu fugiat nulla pariatur excepteur sint.</p>
+                            </div>
+                        </article>
+
+                        <article class="index-sec5__card">
+                            <div class="index-sec5__badge">
+                                <span class="index-sec5__badge-step">STEP 04</span>
+                            </div>
+                            <div class="index-sec5__card-body">
+                                <h3 class="index-sec5__card-title">FINAL REVIEW &amp; LAUNCH</h3>
+                                <p class="index-sec5__card-text">In voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur. Sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section-6" id="portfolio">
+        <div class="container">
+            <div class="index-sec6__head">
+                <p class="index-sec6__eyebrow">Our Portfolio</p>
+                <h2 class="index-sec6__title">Explore the <span class="hm-accent">Success Stories</span> We&rsquo;ve Created</h2>
+                <p class="index-sec6__desc">In culpa qui officia deserunt mollit anim id est laborum curabitur. Pretium tincidunt lacus nulla gravida orci a odio nullam varius turpis. Et commodo pharetra est eros bibendum elit nec luctus magna felis. Sollicitudin mauris integer in mauris.</p>
+            </div>
+
+            <div class="index-sec6__wrap">
+                <div class="swiper index-sec6__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/1.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/2.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/3.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/4.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/5.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/6.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/7.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/8.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/9.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/10.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/11.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/12.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/13.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/14.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/15.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/16.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/17.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/18.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/19.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/20.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/21.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/22.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/23.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/24.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio/optimized/25.jpg" alt="Portfolio book" loading="lazy" decoding="async"></div>
+                    </div>
+                </div>
+                <button type="button" class="index-sec6__nav index-sec6__nav--prev" aria-label="Previous"></button>
+                <button type="button" class="index-sec6__nav index-sec6__nav--next" aria-label="Next"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section-7" id="testimonials">
+        <div class="container">
+            <div class="index-sec7__head">
+                <p class="index-sec7__eyebrow">Testimonials</p>
+                <h2 class="index-sec7__title">What Authors Say <span class="hm-accent">After Publishing With Us</span></h2>
+                <p class="index-sec7__desc">A odio nullam varius turpis et commodo pharetra est eros bibendum. Elit nec luctus magna felis sollicitudin mauris integer.</p>
+            </div>
+
+            <div class="testi-grid">
+                <figure class="testi-grid__card testi-grid__card--primary testi-grid__card--tall">
+                    <div class="testi-grid__stars" role="img" aria-label="5 of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <blockquote class="testi-grid__quote">
+                        <p>Eu nibh euismod gravida duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit etiam tempor lorem ipsum dolor sit. Amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </blockquote>
+                    <figcaption class="testi-grid__author">
+                        <span class="testi-grid__avatar" aria-hidden="true">R</span>
+                        <span>
+                            <strong class="testi-grid__name">Rachel M.</strong>
+                            <span class="testi-grid__role">Nonfiction Author</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="testi-grid__card testi-grid__card--light">
+                    <div class="testi-grid__stars" role="img" aria-label="5 of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <blockquote class="testi-grid__quote">
+                        <p>Tempor lorem ipsum dolor sit amet consectetur adipiscing elit sed do. Eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim. Ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat duis aute irure.</p>
+                    </blockquote>
+                    <figcaption class="testi-grid__author">
+                        <span class="testi-grid__avatar" aria-hidden="true">M</span>
+                        <span>
+                            <strong class="testi-grid__name">Marcus T.</strong>
+                            <span class="testi-grid__role">Memoir Author</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="testi-grid__card testi-grid__card--dark testi-grid__card--tall">
+                    <div class="testi-grid__stars" role="img" aria-label="4 of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star is-off"></i></div>
+                    <blockquote class="testi-grid__quote">
+                        <p>Dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu. Fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+                    </blockquote>
+                    <figcaption class="testi-grid__author">
+                        <span class="testi-grid__avatar" aria-hidden="true">P</span>
+                        <span>
+                            <strong class="testi-grid__name">Priya S.</strong>
+                            <span class="testi-grid__role">Fantasy Author</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="testi-grid__card testi-grid__card--light">
+                    <div class="testi-grid__stars" role="img" aria-label="5 of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <blockquote class="testi-grid__quote">
+                        <p>Ea commodo consequat duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat. Cupidatat non proident sunt in culpa qui officia deserunt.</p>
+                    </blockquote>
+                    <figcaption class="testi-grid__author">
+                        <span class="testi-grid__avatar" aria-hidden="true">D</span>
+                        <span>
+                            <strong class="testi-grid__name">David K.</strong>
+                            <span class="testi-grid__role">Business Author</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="testi-grid__card testi-grid__card--primary testi-grid__card--wide">
+                    <div class="testi-grid__stars" role="img" aria-label="5 of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <blockquote class="testi-grid__quote">
+                        <p>Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa. Qui officia deserunt mollit anim id est laborum curabitur pretium tincidunt. Lacus nulla gravida orci a odio nullam varius turpis et commodo pharetra est.</p>
+                    </blockquote>
+                    <figcaption class="testi-grid__author">
+                        <span class="testi-grid__avatar" aria-hidden="true">A</span>
+                        <span>
+                            <strong class="testi-grid__name">Angela R.</strong>
+                            <span class="testi-grid__role">Romance Author</span>
+                        </span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section-8" id="faq">
+        <div class="container">
+            <div class="index-sec8__panel">
+                <div class="index-sec8__head">
+                    <p class="index-sec8__eyebrow">FAQ</p>
+                    <h2 class="index-sec8__title">Questions Authors Ask <span class="hm-accent">Before Getting Started</span></h2>
+                    <p class="index-sec8__desc">Mauris integer in mauris eu nibh euismod gravida duis ac tellus. Et risus vulputate vehicula donec.</p>
+                </div>
+
+                <div class="index-sec8__body">
+                    <div class="index-sec8__faq">
+                        <div class="accordion index-sec8__accordion" id="faqAccordion">
+                            <div class="accordion-item faq-item">
+                                <h3 class="accordion-header" id="faqHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                        <span class="faq-item__text">What&rsquo;s the difference between self-publishing and working with a book publishing company like Book Publisher?</span>
+                                        <span class="faq-item__icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                    Est laborum curabitur pretium tincidunt lacus nulla gravida orci a odio. Nullam varius turpis et commodo pharetra est eros bibendum elit nec. Luctus magna felis sollicitudin mauris integer in mauris eu nibh euismod. Gravida duis ac tellus et risus vulputate vehicula donec lobortis risus. A elit etiam tempor lorem ipsum dolor sit amet consectetur adipiscing.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item faq-item">
+                                <h3 class="accordion-header" id="faqHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                        <span class="faq-item__text">Is it legal to hire a ghostwriter for my book?</span>
+                                        <span class="faq-item__icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                    Est eros bibendum elit nec luctus magna felis sollicitudin mauris integer. In mauris eu nibh euismod gravida duis ac tellus et risus. Vulputate vehicula donec lobortis risus a elit etiam tempor lorem ipsum. Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item faq-item">
+                                <h3 class="accordion-header" id="faqHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                        <span class="faq-item__text">How much does it cost to publish a book with Book Publisher?</span>
+                                        <span class="faq-item__icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                    Duis ac tellus et risus vulputate vehicula donec lobortis risus a. Elit etiam tempor lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item faq-item">
+                                <h3 class="accordion-header" id="faqHeading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                        <span class="faq-item__text">Why should I hire a professional book publisher instead of doing everything myself?</span>
+                                        <span class="faq-item__icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                    Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua ut enim ad minim veniam quis. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="index-sec8__card">
+                        <span class="index-sec8__card-icon" aria-hidden="true">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </span>
+                        <h3 class="index-sec8__card-title">Have Questions? We&rsquo;re Here to Help</h3>
+                        <p class="index-sec8__card-text">Risus a elit etiam tempor lorem ipsum dolor sit amet consectetur. Adipiscing elit sed do eiusmod tempor incididunt ut.</p>
+                        <a href="#" class="index-sec8__card-btn" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Get Started</a>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section-9" id="contact">
+        <div class="container">
+            <div class="index-sec9__head">
+                <p class="index-sec9__eyebrow">Get in Touch</p>
+                <h2 class="index-sec9__title">Talk to a <span class="hm-accent">Publishing Specialist</span> Today</h2>
+                <p class="index-sec9__desc">Incididunt ut labore et dolore magna aliqua ut enim ad minim. Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Commodo consequat duis aute irure dolor.</p>
+            </div>
+
+            <form class="index-sec9__form" action="https://www.bes-publishers.com/leads/" method="POST">
+                <div class="index-sec9__row">
+                    <label class="index-sec9__field">
+                        <span class="index-sec9__label">Your Name</span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label class="index-sec9__field">
+                        <span class="index-sec9__label">Email Address</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label class="index-sec9__field">
+                        <span class="index-sec9__label">Phone Number (optional)</span>
+                        <input type="tel" name="phone">
+                    </label>
+                </div>
+
+                <label class="index-sec9__field index-sec9__field--message">
+                    <span class="index-sec9__label">Message</span>
+                    <textarea name="brief" rows="2" required></textarea>
+                </label>
+
+                <button type="submit" class="index-sec9__submit">
+                    <span class="index-sec9__submit-text">Leave us a Message</span>
+                    <span class="index-sec9__submit-icon" aria-hidden="true">
+                        <img src="assets/images/get-start-icon-accent.png" alt="">
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bes-footer">
+    <div class="container">
+        <div class="bes-footer__panel">
+            <div class="bes-footer__top">
+                <div class="bes-footer__cta">
+                    <h2 class="bes-footer__cta-title">Ready to Publish Your Book?</h2>
+                    <a href="tel:+12025550199" class="bes-footer__cta-btn">Book A Free Call</a>
+                </div>
+
+                <div class="bes-footer__quick">
+                    <h3 class="bes-footer__heading bes-footer__heading--right">
+                        <span>Quick Links</span>
+                        <span class="bes-footer__heading-line" aria-hidden="true"></span>
+                    </h3>
+                    <ul class="bes-footer__list bes-footer__list--links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#getStartedModal" role="button">Our Pricing</a></li>
+                        <li><a href="#portfolio">Our Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bes-footer__bottom">
+                <div class="bes-footer__brand">
+                    <h3 class="bes-footer__heading bes-footer__heading--left">
+                        <span>Follow Us</span>
+                        <span class="bes-footer__heading-line" aria-hidden="true"></span>
+                    </h3>
+
+                    <div class="bes-footer__social">
+                        <a href="#" class="bes-footer__social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="bes-footer__social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="bes-footer__social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="bes-footer__social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <a href="index.html" class="bes-footer__logo" aria-label="Home">
+                        <span class="logo-text">LOGO</span>
+                    </a>
+
+                    <p class="bes-footer__about">Nisi ut aliquip ex ea commodo consequat duis aute irure dolor. In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla. Pariatur excepteur sint occaecat.</p>
+                </div>
+
+                <div class="bes-footer__contact">
+                    <h3 class="bes-footer__heading bes-footer__heading--right">
+                        <span>Contact Us</span>
+                        <span class="bes-footer__heading-line" aria-hidden="true"></span>
+                    </h3>
+
+                    <ul class="bes-footer__list bes-footer__list--contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>
+                                <strong class="bes-footer__loc-name">United States</strong>
+                                123 Example Street, Suite 100, Your City, ST 00000
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>
+                                456 Sample Avenue, Your City, ST 00000
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+12025550199">+1 202 555 0199</a>
+                        </li>
+                    </ul>
+
+                    <div class="bes-footer__payment">
+                        <img src="assets/images/payment-logo.png" loading="lazy" decoding="async" alt="Payment Method - VISA and Stripe" class="bes-footer__payment-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bes-footer__bar">
+                <span class="bes-footer__bar-mark" aria-hidden="true"></span>
+                <p class="bes-footer__copyright">Copyright &copy; 2026 Book Publishers. All Rights Reserved.</p>
+                <span class="bes-footer__bar-mark" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade get-started-modal" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered get-started-modal__dialog">
+        <div class="modal-content get-started-modal__content">
+            <button type="button" class="get-started-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+
+            <aside class="get-started-modal__aside">
+                <span class="get-started-modal__badge">50% OFF</span>
+                <h2 class="get-started-modal__aside-title">Let&rsquo;s Publish Your Book Together</h2>
+                <p class="get-started-modal__aside-text">Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non. Proident sunt in culpa qui.</p>
+
+                <ul class="get-started-modal__benefits">
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tincidunt lacus nulla</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Nec luctus magna</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Risus vulputate vehicula donec</li>
+                </ul>
+
+                <div class="get-started-modal__aside-foot">
+                    <span class="get-started-modal__aside-foot-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                    <a href="tel:+12025550199">+1 202 555 0199</a>
+                </div>
+            </aside>
+
+            <div class="get-started-modal__main">
+                <div class="get-started-modal__header">
+                    <p class="get-started-modal__eyebrow">Limited Time Offer</p>
+                    <h3 class="get-started-modal__title" id="getStartedModalLabel">Get Started Today</h3>
+                    <p class="get-started-modal__desc">Deserunt mollit anim id est laborum curabitur pretium tincidunt lacus nulla gravida orci.</p>
+                </div>
+
+                <form class="get-started-modal__form" action="https://www.bes-publishers.com/leads/" method="POST">
+                    <label class="get-started-modal__field">
+                        <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        <input type="text" name="name" placeholder="Your Name*" required>
+                    </label>
+                    <label class="get-started-modal__field">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <input type="email" name="email" placeholder="Email Address*" required>
+                    </label>
+                    <label class="get-started-modal__field">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <input type="tel" name="phone" placeholder="Phone Number*" required>
+                    </label>
+                    <label class="get-started-modal__field get-started-modal__field--message">
+                        <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                        <textarea name="brief" rows="3" placeholder="Tell us about your book*" required></textarea>
+                    </label>
+
+                    <button type="submit" class="get-started-modal__submit">
+                        <span class="get-started-modal__submit-text">Get Started</span>
+                        <span class="get-started-modal__submit-icon" aria-hidden="true">
+                            <img src="assets/images/get-start-icon-accent.png" alt="">
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+<!-- custom js -->
+<script src="assets/js/custom.js" defer></script>
+
+
+<!-- Zendesk Widget -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8b347c56-9de7-4087-939b-6a037a749469" async></script>
+<script>
+function setButtonURL() {
+    try {
+        if (window.$zopim && $zopim.livechat) {
+            $zopim.livechat.window.show();
+        } else if (typeof window.zE === 'function') {
+            zE('webWidget', 'open');
+        } else {
+            window.location.href = 'tel:+12025550199';
+        }
+    } catch (e) {
+        window.location.href = 'tel:+12025550199';
+    }
+}
+
+function toggleChat() {
+    setButtonURL();
+}
+
+(function waitForZendesk(tries) {
+    if (typeof window.zE !== 'function') {
+        if (tries < 40) setTimeout(function () { waitForZendesk(tries + 1); }, 250);
+        return;
+    }
+    zE(function () {
+        if (window.$zopim && $zopim.livechat) {
+            $zopim.livechat.setOnUnreadMsgs(function (numUnread) {
+                if (numUnread > 0 && !$zopim.livechat.window.getDisplay()) {
+                    $zopim.livechat.window.show();
+                }
+            });
+        }
+    });
+})(0);
+</script>
+<!-- End of Zendesk Widget -->
+
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"33ae9023278b4e3c99b842ebb34e3953","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,490 @@
+/* =====================================================================
+   Home page modern touch-up
+   Loaded only by index.html and scoped to body.home-modern.
+   To undo: remove the <link> to this file (and the body class) from
+   index.html, or restore backups/home-before-modern-2026-10-23/index.html.
+   ===================================================================== */
+
+.home-modern {
+    --hm-navy: #070c24;
+    --hm-ink: #0b1024;
+    --hm-muted: #5b6478;
+    --hm-blue: #2f6bff;
+    --hm-blue-2: #5c97ff;
+    --hm-line: #e6ebf5;
+    --hm-soft: #f4f6fc;
+    --hm-display: "Plus Jakarta Sans", "Poppins", sans-serif;
+}
+
+/* ---------- Typography ---------- */
+.home-modern section h1,
+.home-modern section h2,
+.home-modern section h3 {
+    font-family: var(--hm-display);
+    letter-spacing: -0.015em;
+    word-spacing: 0.04em;
+}
+
+.home-modern .home-banner__title {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.home-modern .home-index2__title,
+.home-modern .home-index3__title,
+.home-modern .home-index4__title,
+.home-modern .index-sec5__title,
+.home-modern .index-sec6__title,
+.home-modern .index-sec7__title,
+.home-modern .index-sec8__title,
+.home-modern .index-sec9__title {
+    font-weight: 800;
+    line-height: 1.12;
+}
+
+/* Highlighted phrase in each heading */
+.home-modern .hm-accent {
+    background: linear-gradient(90deg, #085cf0 0%, #5c97ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-modern .home-banner__title .hm-accent,
+.home-modern .home-index4__title .hm-accent,
+.home-modern .index-sec6__title .hm-accent {
+    background-image: linear-gradient(90deg, #8fb8ff 0%, #d4e3ff 100%);
+}
+
+/* ---------- Section labels as pill tags ---------- */
+.home-modern .home-banner__eyebrow,
+.home-modern .home-index3__eyebrow,
+.home-modern .home-index4__eyebrow,
+.home-modern .index-sec5__eyebrow,
+.home-modern .index-sec6__eyebrow,
+.home-modern .index-sec7__eyebrow,
+.home-modern .index-sec8__eyebrow,
+.home-modern .index-sec9__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px 7px 12px;
+    border: 1px solid rgba(8, 92, 240, 0.18);
+    border-radius: 999px;
+    background: rgba(8, 92, 240, 0.07);
+    color: #085cf0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.home-modern .home-banner__eyebrow::before,
+.home-modern .home-index3__eyebrow::before,
+.home-modern .home-index4__eyebrow::before,
+.home-modern .index-sec5__eyebrow::before,
+.home-modern .index-sec6__eyebrow::before,
+.home-modern .index-sec7__eyebrow::before,
+.home-modern .index-sec8__eyebrow::before,
+.home-modern .index-sec9__eyebrow::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 0 3px rgba(92, 151, 255, 0.25);
+}
+
+/* Tags on dark backgrounds */
+.home-modern .home-banner__eyebrow,
+.home-modern .home-index4__eyebrow,
+.home-modern .index-sec6__eyebrow {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    color: #cfe0ff;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.home-modern .home-banner__eyebrow {
+    margin-bottom: 20px;
+}
+
+/* ---------- Hero: trust points ---------- */
+.home-modern .hm-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    margin: 26px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-modern .hm-trust li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.home-modern .hm-trust i {
+    color: var(--hm-blue-2);
+}
+
+.home-modern .home-banner__content > :nth-child(5) {
+    animation-delay: 0.56s;
+}
+
+/* ---------- Softer shadows on light sections ---------- */
+.home-modern .service-card {
+    box-shadow: 0 24px 60px rgba(8, 20, 50, 0.16);
+}
+
+.home-modern .index-sec5__card {
+    box-shadow: 0 22px 50px rgba(8, 20, 50, 0.2);
+}
+
+@media (hover: hover) {
+    .home-modern .service-card:hover {
+        box-shadow: 0 32px 70px rgba(8, 20, 50, 0.24);
+    }
+
+    .home-modern .index-sec5__card:hover {
+        box-shadow: 0 30px 64px rgba(8, 20, 50, 0.28);
+    }
+}
+
+.home-modern .home-index2__panel {
+    box-shadow: 0 30px 60px rgba(8, 30, 90, 0.18);
+}
+
+/* ---------- Dark navy panels (Why choose us, Portfolio) ---------- */
+/* Replace the stretched blue panel images with CSS panels */
+.home-modern .home-index4,
+.home-modern .index-section-6,
+.home-modern .index-section-8 {
+    background: none;
+}
+
+.home-modern .home-index4__panel,
+.home-modern .index-section-6 > .container {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+    background:
+        radial-gradient(70% 60% at 88% 0%, rgba(47, 107, 255, 0.5) 0%, rgba(47, 107, 255, 0) 70%),
+        radial-gradient(60% 55% at 0% 100%, rgba(92, 151, 255, 0.28) 0%, rgba(92, 151, 255, 0) 70%),
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 22px 22px,
+        var(--hm-navy);
+    box-shadow: 0 30px 80px rgba(7, 12, 36, 0.22);
+}
+
+.home-modern .home-index4 {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.home-modern .home-index4__panel {
+    padding: 80px 48px 72px;
+}
+
+.home-modern .why-item__icon img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(92, 151, 255, 0.18), 0 12px 30px rgba(47, 107, 255, 0.35);
+}
+
+.home-modern .index-section-6 {
+    padding: 20px 0 90px;
+}
+
+.home-modern .index-section-6 > .container {
+    padding: 72px 40px 64px;
+}
+
+/* ---------- FAQ on a light panel ---------- */
+.home-modern .index-section-8 {
+    padding-top: 10px;
+}
+
+.home-modern .index-sec8__panel {
+    padding: 72px 48px 64px;
+    border: 1px solid var(--hm-line);
+    border-radius: 40px;
+    background:
+        radial-gradient(60% 50% at 100% 0%, rgba(92, 151, 255, 0.16) 0%, rgba(92, 151, 255, 0) 70%),
+        var(--hm-soft);
+}
+
+.home-modern .index-sec8__title {
+    color: var(--hm-ink);
+}
+
+.home-modern .index-sec8__desc {
+    color: var(--hm-muted);
+}
+
+.home-modern .index-sec8__accordion .accordion-button {
+    border: 1px solid var(--hm-line);
+}
+
+.home-modern .index-sec8__accordion .accordion-button:not(.collapsed) {
+    border-color: var(--hm-navy);
+}
+
+.home-modern .index-sec8__accordion .accordion-body {
+    border: 1px solid var(--hm-line);
+    border-top: 0;
+}
+
+.home-modern .index-sec8__card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background:
+        radial-gradient(90% 70% at 100% 0%, rgba(47, 107, 255, 0.45) 0%, rgba(47, 107, 255, 0) 70%),
+        var(--hm-navy);
+    box-shadow: 0 24px 50px rgba(7, 12, 36, 0.25);
+}
+
+.home-modern .index-sec8__card-icon {
+    background: var(--hm-blue);
+}
+
+.home-modern .index-sec8__card-title {
+    color: #fff;
+}
+
+.home-modern .index-sec8__card-text {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* ---------- Testimonials ---------- */
+.home-modern .testi-card {
+    border: 1px solid var(--hm-line);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(8, 20, 50, 0.08);
+}
+
+/* ---------- Contact form as a card with filled fields ---------- */
+.home-modern .index-sec9__form {
+    padding: 40px;
+    border: 1px solid var(--hm-line);
+    border-radius: 32px;
+    background: #fff;
+    box-shadow: 0 30px 70px rgba(8, 20, 50, 0.08);
+}
+
+.home-modern .index-sec9__label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--hm-ink);
+    font-weight: 600;
+}
+
+.home-modern .index-sec9__field input,
+.home-modern .index-sec9__field textarea {
+    padding: 14px 16px;
+    border: 1px solid var(--hm-line);
+    border-radius: 14px;
+    background-color: var(--hm-soft);
+    background-image: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-modern .index-sec9__field input:focus,
+.home-modern .index-sec9__field textarea:focus {
+    border-color: var(--hm-blue);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.12);
+    outline: none;
+}
+
+.home-modern .index-sec9__field:focus-within .index-sec9__label {
+    color: var(--hm-blue);
+}
+
+/* ---------- Tablet and phone ---------- */
+@media (max-width: 991px) {
+    .home-modern .home-index4,
+    .home-modern .index-section-6,
+    .home-modern .index-section-8 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-modern .home-index4__panel,
+    .home-modern .index-section-6 > .container,
+    .home-modern .index-sec8__panel {
+        border-radius: 32px;
+    }
+
+    .home-modern .home-index4__panel {
+        padding: 56px 24px 48px;
+    }
+
+    .home-modern .index-section-6 > .container {
+        width: calc(100% - 24px);
+        padding: 56px 18px 48px;
+    }
+
+    .home-modern .index-sec8__panel {
+        padding: 56px 22px 48px;
+    }
+
+    .home-modern .index-sec9__form {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-modern .home-index4__panel,
+    .home-modern .index-section-6 > .container,
+    .home-modern .index-sec8__panel {
+        border-radius: 26px;
+    }
+
+    .home-modern .home-index4__panel {
+        padding: 44px 16px 40px;
+    }
+
+    .home-modern .index-section-6 > .container {
+        padding: 44px 12px 40px;
+    }
+
+    .home-modern .index-sec8__panel {
+        padding: 44px 14px 36px;
+    }
+
+    .home-modern .hm-trust li {
+        font-size: 13px;
+    }
+}
+
+/* Hero copy is centred below 992px */
+@media (max-width: 991px) {
+    .home-modern .hm-trust {
+        justify-content: center;
+    }
+}
+
+/* ---------- Placeholder "LOGO" wordmark (header and footer) ---------- */
+.home-modern .logo-text {
+    display: inline-block;
+    color: #fff;
+    font-family: var(--hm-display);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    transition: font-size 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.home-modern .site-header.is-scrolled .logo-text {
+    font-size: 22px;
+}
+
+.home-modern .bes-footer__logo .logo-text {
+    font-size: 36px;
+}
+
+@media (max-width: 991px) {
+    .home-modern .logo-text {
+        font-size: 24px;
+    }
+
+    .home-modern .site-header.is-scrolled .logo-text {
+        font-size: 20px;
+    }
+
+    .home-modern .bes-footer__logo .logo-text {
+        font-size: 30px;
+    }
+}
+
+/* ---------- Hero form: glassmorphism page ---------- */
+/* Same recipe as the RevCube nav dropdown: white at 40% over a 30px backdrop
+   blur. form-bg-book-glass.webp is the book with its page made see-through;
+   this layer sits behind it, placed and rounded to the page's exact shape
+   (page = x 45-525, y 20-584 of the 527x624 artwork, right corners ~45px). */
+.home-modern .banner-form__glass {
+    position: absolute;
+    top: 3.205%;
+    left: 8.539%;
+    width: 91.27%;
+    height: 90.54%;
+    z-index: 0;
+    border-radius: 3px 9.36% 9.36% 0 / 3px 7.96% 7.96% 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    pointer-events: none;
+}
+
+/* Fields on glass: translucent white, darker hints so they stay readable */
+.home-modern .banner-form__field input,
+.home-modern .banner-form__field textarea {
+    border-color: rgba(10, 14, 30, 0.55);
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.home-modern .banner-form__field input:focus,
+.home-modern .banner-form__field textarea:focus {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.home-modern .banner-form__field input::placeholder,
+.home-modern .banner-form__field textarea::placeholder {
+    color: #4b5563;
+}
+
+.home-modern .banner-form__field i {
+    color: #374151;
+}
+
+.home-modern .banner-form__subtitle {
+    color: #111827;
+}
+
+/* ---------- Hero → intro panel seam (desktop) ---------- */
+/* The intro panel is as wide as the hero and fills the space behind the
+   hero's rounded bottom corners, so the two read as one block. The hero
+   radius is a fixed 80px (was 5.6% / 10%) so the corner fill always matches. */
+@media (min-width: 992px) {
+    .home-modern .home-banner--video,
+    .home-modern .home-banner__media {
+        border-radius: 80px;
+    }
+
+    .home-modern .home-index2 > .container {
+        max-width: none !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-modern .home-index2__panel {
+        padding-left: max(40px, 5%);
+        padding-right: max(40px, 5%);
+        box-shadow: 0 34px 50px -16px rgba(8, 30, 90, 0.2);
+    }
+
+    .home-modern .home-index2::before,
+    .home-modern .home-index2::after {
+        content: "";
+        position: absolute;
+        top: -80px;
+        width: 80px;
+        height: 80px;
+        pointer-events: none;
+    }
+
+    .home-modern .home-index2::before {
+        left: 0;
+        background: radial-gradient(circle 80px at 100% 0, transparent 79.5px, var(--hm-panel-edge, #2a6ef2) 80px);
+    }
+
+    .home-modern .home-index2::after {
+        right: 0;
+        background: radial-gradient(circle 80px at 0 0, transparent 79.5px, var(--hm-panel-edge, #2a6ef2) 80px);
+    }
+}

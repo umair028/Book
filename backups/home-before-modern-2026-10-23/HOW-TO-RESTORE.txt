@@ -1,0 +1,11 @@
+Backup of the home page taken before the "modern touch-up" (2026-10-23).
+
+To undo the touch-up:
+1. Copy index.html from this folder back to the site root (replacing the new one).
+2. Optionally delete assets/css/home-modern.css and assets/js/home-modern.js
+   (only the new home page uses them).
+
+style.css, responsive.css and custom.js are saved here too for reference;
+the touch-up does not change them.
+
+Do not upload this "backups" folder to the live website.
